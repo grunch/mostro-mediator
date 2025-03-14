@@ -1,0 +1,24 @@
+[package]
+name = "mostro-mediator"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Francisco Calderón <fjcalderon@gmail.com>"]
+description = "Mostro P2P dispute mediator (proof of concept)"
+homepage = "https://mostro.network"
+repository = "https://github.com/grunch/mostro-mediator"
+readme = "README.md"
+keywords = [
+  "mostro",
+  "p2p",
+  "nostr",
+  "dispute",
+  "mediator",
+  "rust",
+  "nip59",
+  "nip44",
+]
+
+[dependencies]
+nostr-sdk = { version = "0.39.0", features = ["nip59", "nip44"] }
+tokio = "1.44.1"
